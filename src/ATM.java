@@ -43,6 +43,7 @@ public class ATM extends javax.swing.JFrame {
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
+        jButton9 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -87,14 +88,14 @@ public class ATM extends javax.swing.JFrame {
         jButton7.setBackground(new java.awt.Color(204, 204, 204));
         jButton7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton7.setForeground(new java.awt.Color(51, 51, 51));
-        jButton7.setText("HOW TO USE IT ? CLICK HERE");
+        jButton7.setText("EXIT");
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
             }
         });
         jPanel2.add(jButton7);
-        jButton7.setBounds(60, 370, 330, 50);
+        jButton7.setBounds(60, 440, 330, 50);
 
         jButton8.setBackground(new java.awt.Color(204, 204, 204));
         jButton8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -112,13 +113,25 @@ public class ATM extends javax.swing.JFrame {
         jPanel2.add(jPanel3);
         jPanel3.setBounds(30, 90, 380, 250);
 
+        jButton9.setBackground(new java.awt.Color(204, 204, 204));
+        jButton9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jButton9.setForeground(new java.awt.Color(51, 51, 51));
+        jButton9.setText("HOW TO USE IT ? CLICK HERE");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+        jPanel2.add(jButton9);
+        jButton9.setBounds(60, 370, 330, 50);
+
         jPanel1.add(jPanel2);
-        jPanel2.setBounds(20, 20, 440, 460);
+        jPanel2.setBounds(20, 20, 440, 510);
 
         getContentPane().add(jPanel1);
-        jPanel1.setBounds(0, 0, 490, 490);
+        jPanel1.setBounds(0, 0, 490, 560);
 
-        setBounds(0, 0, 505, 529);
+        setBounds(0, 0, 505, 598);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -145,20 +158,7 @@ public class ATM extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        z=JOptionPane.showConfirmDialog(null,"Cara Mengoperasikan Mesin ATM\n"
-                + "[1] Masukkan PIN anda dengan benar\n"
-                + "[2] Lakukan transaksi sesuai dengan opsi yang ada\n"
-                + "[3] Ambil kartu ATM anda jika sudah selesai\n ","INFO",
-                JOptionPane.YES_NO_OPTION, 3); //konfirmasi transaksi lain
-            if (z==0)
-            {
-                this.setVisible(true);
-            }
-            else
-            {
-                JOptionPane.showMessageDialog(null,"Terimakasih telah menggunakan ATM BAYKRIS, ambil kartu ATM Anda.");
-                System.exit(0);
-            }
+        System.exit(0);
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
@@ -181,6 +181,10 @@ public class ATM extends javax.swing.JFrame {
             }    
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -222,6 +226,7 @@ public class ATM extends javax.swing.JFrame {
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
