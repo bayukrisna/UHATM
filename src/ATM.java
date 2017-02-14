@@ -14,8 +14,8 @@ import javax.swing.JOptionPane;
 
 public class ATM extends javax.swing.JFrame {
    String str, str1, str2;
-    int choice,z,pin=1234,saldo;
-    int m,t,s,tab=5000000;
+    int choice,z,pin=9876,saldo;
+    int m,t,s,tab=1000000;
 
 
     /**
@@ -145,10 +145,10 @@ public class ATM extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
-        z=JOptionPane.showConfirmDialog(null,"Cara Penggunaan Aplikasi\n"
-                + "[1] Masukkan PIN dengan benar\n"
-                + "[2] Bertransaksilah dengan benar sesuai pilihan\n"
-                + "[3] Gunakan Uang sesuai kebutuhan dan rajinlah menabung\n ","INFO",
+        z=JOptionPane.showConfirmDialog(null,"Cara Mengoperasikan Mesin ATM\n"
+                + "[1] Masukkan PIN anda dengan benar\n"
+                + "[2] Lakukan transaksi sesuai dengan opsi yang ada\n"
+                + "[3] Ambil kartu ATM anda jika sudah selesai\n ","INFO",
                 JOptionPane.YES_NO_OPTION, 3); //konfirmasi transaksi lain
             if (z==0)
             {
